@@ -1,0 +1,26 @@
+<div class="form-contact__container">
+    <h2 class="form-contact__title">Contacto</h2>
+    
+    <form class="form-contact" action="#" autocomplete="off">
+        <div class="form-contact__name new-product__name">
+            <label class="form-contact__label" for="name">Nombre:<span>*</span></label>
+            <input class="form-contact__input" id="name" type="text" name="name" autofocus required>
+            <p class="form__input-error">El nombre puede tener letras y numeros con un máximo de 30 caracteres.</p>
+        </div>
+    
+        <div class="form-contact__email new-product__email">
+            <label class="form-contact__label" for="email">E-mail:<span>*</span></label>
+            <input class="form-contact__input" id="email" type="text" name="email" required>
+            <p class="form__input-error">Ingrese una direccion de mail válida</p>
+        </div>
+    
+        <div class="form-contact__coments new-product__long-description">
+            <label class="form-contact__coments-label" for="coments">Comentarios:<span>*</span></label>
+            <textarea class="form-contact__coments-input form-contact__input" id="coments" name="long-description" required></textarea>
+            <p class="form__input-error">Maximo 2000 caracteres</p>
+        </div>
+        <div class="form-contact__btn-container">
+            <input class="form-contact__btn" type="submit" value="Enviar">
+        </div>
+    </form>
+</div>

@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap');
+
+.cards-container {
+    padding: 1em;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+
+body {
+    background-color: #f1f1f1;
+    font-family: 'Lato', sans-serif;
+}
+
+.banner-container {
+    height: 95px;
+    background-repeat:no-repeat;
+    background-image: url(../img/banners/banner-1.jpg);
+    background-position: center;
+    background-size: contain;
+    background-color: #ECC347;
+
+    @media (min-width: 950px) {
+        background-image: url(../img/banners/banner-banco.jpg);
+    }
+}
+
+.section-cards__header {
+    padding-left: 2em;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+

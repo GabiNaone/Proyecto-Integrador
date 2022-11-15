@@ -1,0 +1,23 @@
+{{#each products}}
+<div class="card" data-id="{{id}}">
+    <article class="card__article">
+        <div class="card__image-container">
+            <img src= '{{image}}' alt= '{{alt}}' class="card__image">
+        </div>
+        <div class="card__content">
+            <h2 class="card__heading">{{name}}</h2>
+            <div class="card__description">
+                <p class="card__description">{{shortDescription}}</p>
+            </div>
+            <div class="card__price">
+                <p>${{price}}</p>
+            </div>
+            <div class="card__link-container">
+                <a>
+                    <input class="card__link" type="button" value="Comprar" id={{id}}>
+                </a>
+            </div>
+        </div>
+    </article>
+</div>
+{{/each}}

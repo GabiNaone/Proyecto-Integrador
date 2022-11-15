@@ -1,0 +1,71 @@
+//Estilos del modal
+
+.cart-modal{
+    &-container {
+    width: 80%;
+    height: 80%;
+    margin: 20px 10%;
+    background-color: #ffde59ea;
+    position: absolute;
+    top: 10%;
+    border-radius: 8px;
+    filter: drop-shadow(15px 12px 4px #866f50ec);
+    display: none;
+    z-index: 1;
+    overflow: scroll;
+    padding: .5em;
+    
+        &--enabled {
+            display: block;
+        }
+    }
+
+    &__close{
+        background-color: rgba(248, 50, 50, 0.808);
+        width: min-content;
+        margin: 10px 10px 0 0;
+        padding: 10px;
+        border-radius: 8px;
+        border: solid 2px #8b0000;
+        color: #eee;
+        cursor: pointer;
+        height: min-content;
+    
+        &-container {
+        display: flex;
+        flex-direction: row-reverse;
+        }
+    }
+
+}
+
+.shopping-cart-image{
+    width: 60px;
+    border: solid 1px #f83232ce;
+    border-radius: 3px;
+}
+
+.sshoppingCartTotal{
+    text-align: center;
+}
+
+
+.btnDelete{
+    background-color: #f83232ce;
+    padding: 3px;
+    border-radius: 5px;
+    border: solid 1px #8b0000;
+    color: #eee;
+    cursor: pointer;
+    font-size: 10px;
+}
+
+.shopping-cart-quantity-input{
+    width: 40px;
+}
+
+.shoppingCartItemQuantity{
+    border: solid 1px #f83232ce;
+    border-radius: 3px;
+
+}

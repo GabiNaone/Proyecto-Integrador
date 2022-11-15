@@ -1,0 +1,262 @@
+.form-title {
+    padding-bottom: 10px;
+    max-width: 1400px;
+    margin: 30px  auto 0 auto;
+    color: #ffffff;
+    text-align: center;
+    text-shadow: 1px 1px 5px #000000 ;
+    font-size: 35px;
+    
+}
+
+.new-product{
+    
+    &__container{
+        text-align: center;
+        background-image: url(../img/lego-bricks2.jpg);
+        background-repeat: repeat;
+        padding: 1em;
+        max-width: 2000px;
+        margin: 0 auto;
+        
+        @media (min-width: 850px) {
+            background-image: url(../img/lego-alta.png), url(../img/lego-bricks2.jpg);
+            background-repeat: no-repeat, repeat;
+            background-position: right;
+            background-size: 300px, 50%;
+        }
+    }
+    
+    &__form{
+        padding: 1.1em;
+        background-color: #ffffffce;
+        margin: 0 auto;
+        text-align: left;
+        width: 300px;
+        border-radius: 5px;
+        box-shadow: 4px 4px 10px rgb(0, 0, 0);
+
+        @media (min-width: 500px) {
+            width: 400px;
+        }
+        @media (min-width: 780px) {
+            width: 500px;
+        }
+    }
+
+    &__input{
+        outline: none;
+    }
+    
+    &__name{
+        margin-bottom: .8em;
+        
+        &-input {
+            width: 200px;
+        }
+    }
+    
+    &__price {
+        margin-bottom: .8em;
+    
+        &-input {
+            margin-left: 19px;
+            width: 100px;
+        }
+    }
+
+    &__stock {
+        margin-bottom: .8em;
+
+        &-input {
+            margin-left: 25px;
+            width: 100px;
+        }
+    }
+
+    &__brand {
+        margin-bottom: .8em;
+
+        &-input {
+            margin-left: 13px;
+            width: 180px;
+        }
+    }
+
+    &__category {
+        margin-bottom: .8em;
+    }
+    
+    &__shortDescription {
+        margin-bottom: .8em;
+
+        &-input {
+            margin-top: .8em;
+            height: 50px;
+            width: 200px;
+            resize:vertical;
+            min-height: 30px;
+            max-height: 80px;
+        }
+    }
+
+    &__longDescription {
+        margin-bottom: .8em;
+        
+        &-input {
+            margin-top: .8em;
+            width: 200px;
+            resize:vertical;
+            min-height: 50px;
+            max-height: 500px;
+        }
+    }
+
+    &__free-shipping {
+        margin-bottom: .8em;
+    }
+    
+    &__ageFrom {
+        margin-bottom: .8em;
+        
+        &-input {
+            margin-left: 24px;
+            width: 50px;
+        }
+    }
+    
+    &__ageUntil {
+        margin-bottom: .8em;
+
+        &-input {
+            margin-left: 28px;
+            width: 50px;
+        }
+    }
+
+    &__photo {
+        margin-bottom: .8em;
+        cursor: pointer;
+        overflow: hidden;
+        
+        &-input {
+            margin-right: auto;
+            cursor: pointer;
+        }
+
+        &-label{
+        cursor: pointer;
+    }
+    }
+
+    &__btn-container{
+        text-align: center;
+    }
+
+    &__btn {
+        padding: 10px;
+        cursor: pointer;
+        color: #D43232;
+        font-weight: 700;
+        background-color: #FFDE59;
+        border-radius: 5px;
+        border: none;
+
+        &:hover{
+            background-color: #ab2b2b;
+            color: #FFDE59;
+        }
+    }
+}
+
+
+.products-table {
+    background-color: #ffde59c0;
+    max-width: 50%;
+    margin: 0 auto;
+    border-radius: 5px;
+
+    &__title{
+        padding-bottom: 10px;
+        max-width: 1400px;
+        margin: 30px  auto 0 auto;
+        color: #ffffff;
+        text-align: center;
+        text-shadow: 1px 1px 5px #000000 ;
+        font-size: 35px;
+
+    }
+
+    &__item{
+        background-color: #ec4949b4;
+    }
+
+    &__quantity{
+        font-weight: bold;
+    }
+
+    &__id{
+        display: none;
+    }
+}
+
+.btn{
+
+    &-delete{
+        cursor: pointer;
+        background-color: #ab2b2b;
+        color: #FFDE59;
+        border: none;
+        border-radius: 5px;
+        margin: 5px;
+
+        &:hover{
+            text-decoration: underline solid 2px;
+        }
+    }
+    &-edit{
+        cursor: pointer;
+        background-color: #65ab2b;
+        color: #413815;
+        border: none;
+        border-radius: 5px;
+
+        &:hover{
+            text-decoration: underline solid 2px;
+        }
+    }
+}
+
+/* ----- -----  Estilos para Validacion ----- ----- */
+
+
+.form__grupo-incorrecto .new-product__label {
+	color: #bb2929;
+}
+
+.form__grupo-incorrecto .new-product__input {
+	border: 3px solid #bb2929;
+}
+
+.form__input-error {
+    font-size: 12px;
+	margin-bottom: 0;
+	display: none;
+	color: #bb2929;
+    
+}
+
+.form__input-error-active {
+    display: block;
+    font-weight: bold;
+}
+
+.form__validacion-estado {
+	position: absolute;
+	right: 10px;
+	bottom: 15px;
+	z-index: 100;
+	font-size: 16px;
+	opacity: 0;
+}
+

@@ -1,0 +1,131 @@
+.main-footer {
+    padding: 10px;
+    background-color: #fff;
+    border-top: solid 2px #D43232;
+    text-align: center;
+    
+    &__container {
+        margin-right: auto;
+        margin-left: auto;
+        max-width: 1400px;
+        
+            @media (min-width: 992px) {
+                display: grid;
+                grid-template-columns: 20% 20% 40% 20%;
+            }
+    }
+
+    &__logo-container{
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    &__logo{
+        //width: 15%;
+        width: 90px;
+
+
+        @media (min-width: 992px) {
+            width: 70%;
+            margin-top: 30px;
+        }
+    }
+    
+    &__networks{
+        text-align: center;
+    }
+    
+    &__contact{
+        text-align: center;
+
+    }
+    
+    &__help{
+        text-align: center;
+
+
+    }
+}
+
+.footer__newsletter{
+    margin-top: 25px;
+    padding: 10px;
+    padding-bottom: 20px;
+    border-top: solid 2px #D43232;
+    text-align: center;
+    
+
+
+    &-input{
+        cursor: pointer;
+        padding: .3em .1em .3em .3em;
+        width: 15em;
+        outline: none;
+    }
+
+    &-label{
+        cursor: pointer;
+        background-color: #FD8024;
+        border-radius: 3px;
+        color: #000000;
+        font-size: 1.2em;
+        font-weight: 500;
+        padding: .1em .3em .2em .3em;
+        border: none;
+        cursor: pointer;
+        left: 75px;
+        border: solid 2px #FD8024;
+        margin-left: 0; 
+    
+            &:hover {
+            background-color: #FFF;
+            border: solid 2px #FD8024;
+    
+
+    }
+    }
+}
+
+.contact-list {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-item{
+    padding-top: 20px;
+    cursor: pointer;
+
+    &:hover {
+    color:#FD8024
+    }
+}
+
+.contact-icon {
+    width: 18px;
+    
+}
+
+.help-list {
+    list-style: none;
+    padding: 0;
+}
+
+.help-item {
+    margin-bottom: 10px;
+    color: #000000;
+    text-decoration: none;
+
+    &-link:link {
+        color:#000000
+    }
+
+    &-link:visited {
+        color:#000000
+    }
+
+    &-link:hover {
+        color:#FD8024
+    }
+
+}
+

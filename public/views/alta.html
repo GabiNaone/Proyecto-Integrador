@@ -1,0 +1,98 @@
+<div class="new-product__container">
+    <h2 class="form-title" >Alta de productos</h2>
+    
+    <form class="new-product__form" action="/api/products" autocomplete="off" enctype="multipart/form-data">
+        <div class="new-product__name">
+            <label class="new-product__label" for="name">Nombre:<span>*</span></label>
+            <input class="new-product__name-input new-product__input new-product__input" id="name" type="text" name="name" required autofocus>
+            <p class="form__input-error">El nombre puede tener letras y numeros con un máximo de 30 caracteres.</p>
+        </div>
+    
+        <div class="new-product__price">
+            <label class="new-product__label" for="price">Precio:<span>*</span></label>
+            <input class="new-product__price-input new-product__input" id="price" type="text" name="price" required>
+            <p class="form__input-error">El precio debe ser mayor a 0 y puede contener hasta 2 decimales.</p>
+        </div>
+    
+        <div class="new-product__stock">
+            <label class="new-product__label" for="stock">Stock:<span>*</span></label>
+            <input class="new-product__stock-input new-product__input" id="stock" type="text" name="stock" required>
+            <p class="form__input-error">El stock debe ser mayor o igual a 0, sin decimales.</p>
+        </div>
+    
+        <div class="new-product__brand">
+            <label class="new-product__label" for="brand">Marca:</label>
+            <input class="new-product__brand-input new-product__input" id="brand" type="text" name="brand">
+            <p class="form__input-error">La marca puede tener letras y numeros con un máximo de 40 caracteres.</p>
+        </div>
+    
+        <div class="new-product__category">
+            <label class="new-product__label" for="category">Categoria:</label>
+            <input class="new-product__category-input new-product__input" id="category" type="text" name="category">
+            <p class="form__input-error">La categoria puede tener letras y numeros con un máximo de 50 caracteres.</p>
+        </div>
+    
+        <div class="new-product__shortDescription">
+            <label class="new-product__label" for="short-description">Descripcion corta:<span>*</span></label>
+            <textarea class="new-product__shortDescription-input new-product__input" id="short-description" name="shortDescription" required></textarea>
+            <p class="form__input-error"> Maximo 80 caracteres.</p>
+        </div>
+    
+        <div class="new-product__longDescription">
+            <label class="new-product__label" for="long-description">Descripcion larga:<span>*</span></label>
+            <textarea class="new-product__longDescription-input new-product__input" id="long-description" name="longDescription" required></textarea>
+            <p class="form__input-error"> Maximo 2000 caracteres.</p>
+        </div>
+    
+        <div class="new-product__free-shipping">
+            <label class="new-product__label" for="free-shipping">Envio sin cargo:<span>*</span></label>
+            <select class="new-product__free-shipping-input new-product__input" id="free-shipping" name="free-shipping" required>
+                <option value="">- Seleccionar -</option>
+                <option value="si">Si</option>
+                <option value="no">No</option>
+            </select>
+        </div>
+    
+        <div class="new-product__ageFrom">
+            <label class="new-product__label" for="age-from">Edad desde:<span>*</span></label>
+            <input class="new-product__age-from-input new-product__input" id="age-from" type="number" name="ageFrom" required>
+            <select name="age-from" required>
+                <option value="">- Seleccionar -</option>
+                <option value="meses">Meses</option>
+                <option value="años">Años</option>
+            </select>
+            <p class="form__input-error">La edad debe ser mayor o igual a 0, sin decimales.</p>
+        </div>
+    
+        <div class="new-product__ageUntil">
+            <label class="new-product__label" for="age-until">Edad hasta:<span>*</span></label>
+            <input class="new-product__age-until-input new-product__input" id="age-until" type="number" name="ageUntil" required>
+            <select name="age-until" required>
+                <option value="">- Seleccionar -</option>
+                <option value="meses">Meses</option>
+                <option value="años">Años</option>
+            </select>
+            <p class="form__input-error">La edad debe ser mayor o igual a 0, sin decimales.</p>
+        </div>
+    
+        <div class="new-product__photo">
+            <label class="new-product__photo-label" for="photo">Foto:<span>*</span></label>
+            <input class="new-product__photo-input new-product__input" id="photo" type="file" name="image" accept="image/png, .jpeg, .jpg, image/gif" required>
+            <p>Solo se podran cargar archivos image/png .jpeg .jpg image/gif</p>
+        </div>
+    
+        <div class="new-product__btn-container">
+            <button class="new-product__btn" id="btn-create" type="submit" value="Cargar">Cargar</button>
+            <button class="new-product__btn" id="btn-update" type="submit" disabled value="Guardar">Guardar</button>
+            <button class="new-product__btn" id="btn-cancel" type="submit" disabled value="Cancelar">Cancelar</button>
+        </div>
+    </form>
+    <section>
+        <h2 class="products-table__title">Listado de productos</h2>
+        <div class="products-table-container"></div>
+    </section>
+    
+
+</div>
+
+

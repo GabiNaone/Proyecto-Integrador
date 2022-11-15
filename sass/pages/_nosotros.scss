@@ -1,0 +1,28 @@
+.we-title {
+    padding-left: 1.5em;
+    padding-bottom: 10px;
+    margin: 30px  auto 0 auto;
+}
+
+.banner__container{
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    background-image: url(../img/nosotros/banner-nosotros1.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 450px;
+    z-index: -1;
+}
+
+.text__container{
+    position: absolute;
+    top: 50px;
+    padding: .6em;
+    margin-left: .8em;
+    margin-right: .8em;
+    background-color: #ffffff96;
+    border-radius: 8px;
+    max-width: 600px;
+}

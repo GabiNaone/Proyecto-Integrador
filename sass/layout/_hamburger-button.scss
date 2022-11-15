@@ -1,0 +1,42 @@
+.hamburger-button { 
+    display: block;
+    cursor: pointer;
+    width: 2em;
+    height: 2em;
+    position: relative;
+    margin: 0 auto;
+
+
+    &__top-bread {
+        display: block;
+        position: absolute;
+        width: 85%;
+        height: 9%;
+        top: 15%;
+        left: 10%;
+        background-color: #000;
+        border-radius: 5px;
+    }
+    
+    &__meat {
+        position: absolute;
+        left: 10%;
+        top: 40%;
+        display: block;
+        width: 85%;
+        height: 9%;
+        background-color: #000;
+        border-radius: 5px;
+    }
+    
+    &__bottom-bread {
+        position: absolute;
+        bottom: 26%;
+        display: block;
+        width: 85%;
+        height: 9%;
+        left: 10%;
+        background-color: #000;
+        border-radius: 5px;
+    }
+}

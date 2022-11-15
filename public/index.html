@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="zxx">
+    <head>
+        <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Jugueteria Cósmica</title>
+</head>
+<body>
+    <header><input type="checkbox" class="main-nav-toggle" id="main-nav-toggle">
+        <div class="main-header">
+            <div class="main-header__container">
+                <div class="main-header__logo-container">
+                    <a href="/">
+                        <img src="img/logos/logo-sin-nombre.png" alt="logo" class="logo">
+                    </a>
+                </div>
+                <div class="main-header__search-form-container">
+                    <input class="search-form-input" id="search" type="text" placeholder="Buscar">
+                    <button class="search-form-btn" type="submit" title="Buscar">
+                        <img class="search-form-image" src="img/iconos/button-search.png" alt="buscar">
+                    </button>
+                </div>
+                <div class="main-header__cart-button-container">
+                    <img class="cart-button-image" src="img/iconos/shopping-cart.png" alt="carrito" title="Carrito">
+                </div>
+                <div class="main-header__hamburguer-button-container">
+                    <label class="hamburger-button" for="main-nav-toggle" title="Expandir barra de navegacion">
+                        <span class="hamburger-button__top-bread"></span>
+                        <span class="hamburger-button__meat"></span>
+                        <span class="hamburger-button__bottom-bread"></span>
+                    </label>
+                </div>
+                <div class="cart-modal-container">
+                    <div class="cart-modal__close-container">
+                        <div class="cart-modal__close" title="Cerrar ventana">
+                            X
+                        </div>
+                    </div>
+                    <section class="shopping-cart">
+                    <div class="container">
+                        <h1>Carrito</h1>
+                        <hr>
+                        <table class="shopping-cart-items shoppingCartItemsContainer">
+                            <thead>
+                                <th class="shopping-cart-header">Producto</th>
+                                <th class="shopping-cart-header">Nombre</th>
+                                <th class="shopping-cart-header">Sub total</th>
+                                <th class="shopping-cart-header">Cantidad</th>
+                            </thead>
+                            <tbody></tbody>
+                        </table>
+
+                        <div class="">
+                            <p>Total</p>
+                            <p class="shoppingCartTotal">$0.00</p>
+                        </div>
+
+                    </section>
+                </div>
+                <div class="main-header__main-nav-container">
+                    <nav class="main-nav">
+                        <ul class="main-nav__list">
+                            <li class="main-nav__item">
+                                <a class="main-nav__link" href="#/inicio">Inicio</a>
+                            </li>
+                            <li class="main-nav__item">
+                                <a class="main-nav__link" href="#/alta">Alta</a>
+                            </li>
+                            <li class="main-nav__item">
+                                <a class="main-nav__link" href="#/contacto">Contacto</a>
+                            </li>
+                            <li class="main-nav__item">
+                                <a class="main-nav__link" href="#/nosotros">Nosotros</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+    </header>
+        
+    <main>{{{body}}}</main>
+    
+    <footer>
+        <div class="main-footer">
+            <div class="main-footer__container">
+                <div class="main-footer__logo-container">
+                    <a href="/">
+                        <img class="main-footer__logo" src="img/logos/logo-sin-nombre.png" alt="logo">
+                    </a>
+                </div>
+                <div class="main-footer__networks">
+                    <h4>REDES</h4>
+                    <a href="https://www.facebook.com/" target="_blank"><img src="img/iconos/facebook-small.png" alt="facebook"></a>
+                    <a href="https://www.instagram.com/" target="_blank"><img src="img/iconos/instagram-small.png" alt="instagram"></a>
+                </div>
+                <div class="main-footer__contact">
+                    <h4>CONTACTO</h4>
+                    <ul class="contact-list">
+                        <li class="contact-item">
+                            <img src="img/iconos/telefono.png" alt="telefono" class="contact-icon">
+                            (011) 11-6416-8990
+                        </li>
+                        <li class="contact-item">
+                            <img src="img/iconos/ubicacion.png" alt="ubicacion" class="contact-icon">
+                            <a href="https://www.google.com.ar/maps/place/Buenos+Aires,+CABA/@-34.5656327,-58.5585063,11.5z/data=!4m5!3m4!1s0x95bcca3b4ef90cbd:0xa0b3812e88e88e87!8m2!3d-34.6036844!4d-58.3815591" target="_blank">Argentina, Capital Federal.</a>
+                        </li>
+                        <li class="contact-item">
+                            <img src="img/iconos/mail.png" alt="mail" class="contact-icon">
+                            <a href="mailto:naonegabriel@gmail.com">naonegabriel@gmail.com</a>
+                        </li>
+                        <li class="contact-item">
+                            <img src="img/iconos/whatsapp.png" alt="whatsApp" class="contact-icon">
+                            <a href="https://wa.me/+5491164168990" target="_blank">+549-11-6416-8990</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="main-footer__help">
+                    <h4>AYUDA</h4>
+                    <ul class="help-list">
+                        <li class="help-item">
+                            <a class="help-item-link" href="">Legales</a>
+                        </li>
+                        <li class="help-item">
+                            <a class="help-item-link" href="">Terminos y condiciones</a>
+                        </li>
+                        <li class="help-item">
+                            <a class="help-item-link" href="">Politica de privacidad</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="js/vendor/handlebars.min-v4.7.7.js"></script>
+    <script src="js/main.js" type="module"></script>
+</body>
+</html>

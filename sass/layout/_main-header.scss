@@ -1,0 +1,121 @@
+.main-header {
+    background-color: #D43232;
+    width: 100%;
+
+    &__container{
+        max-width: 1400px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 15% 55% 15% 15%;
+        background-color: #D43232;
+        align-items: center;
+    
+        @media (min-width:768px) {
+            grid-template-columns: 10% 45% 35% 10%;
+        }
+    }
+
+    &__logo-container {
+        margin: 5px;
+        text-align: center;
+        grid-column-start: 1;
+        grid-row-start: 1;
+    }
+
+    //Contenedor buscador
+    &__search-form-container {
+        grid-row-start: 1;
+        grid-column-start: 2;
+        text-align: center;
+        position: relative;
+        max-width: 600px;
+
+        @media (min-width: 768px) {
+            display: block;
+            grid-row-start: 1;
+            grid-column-start: 3;
+        }
+    }
+
+    //Contenedor del carrito
+    &__cart-button-container {
+        grid-row-start: 1;
+        grid-column-start: 3;
+        text-align: center;
+
+        &--active {
+            background-color: #ff0000;
+            border-radius: 8px;
+            border: solid 2px #8b0000;
+        }
+
+        @media (min-width: 768px) {
+            display: block;
+            grid-row-start: 1;
+            grid-column-start: 4;
+        }
+    }
+    
+    //Contenedor del botón hamburguesa
+    &__hamburguer-button-container {
+        grid-row-start: 1;
+        grid-column-start: 4;
+    
+        @media (min-width: 768px) {
+            display: none;
+        }
+    }
+
+    //Contenedor de la barra de navegación
+    &__main-nav-container {
+        display: none;
+        
+        @media (min-width: 768px) {
+            display: block;
+            grid-row-start: 1;
+            grid-column-start: 2;
+        }
+    }
+}
+
+
+.logo {
+    max-width: 50px;
+    cursor: pointer;
+}
+
+//Buscador
+.search-form{
+    //Lupa btn
+    &-btn{
+        border: 0;
+        cursor: pointer;
+        background: none;
+        position: absolute;
+        right: 20%;
+    }    
+    //Imagen lupa
+    &-image{
+        max-width: 25px;
+        margin-left: 10px;
+        position: absolute;
+        cursor: pointer;
+    }    
+    //Input buscar
+    &-input {
+        border-radius: 5px;
+        border: none;
+        width: 60%;
+        padding: 0.3em;
+        max-width: 350px;
+        outline: none;
+    }
+}
+
+//Imagen carrito
+.cart-button-image {
+    width: 65px;
+    padding: 1em;
+    cursor: pointer;
+}
+
